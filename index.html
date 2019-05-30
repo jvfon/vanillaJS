@@ -2,12 +2,21 @@
 <html>
 <head>
     <title>JS Vanilla</title>
-    <script src="vanilla.js" type="text/javascript">
-        alert(window.title);
+    <script src="vanillaJS.js" type="text/javascript">
+       
     </script>
 </head>
 <body>
-    
+    <h1></h1>
+    <input type="button" id="looper" value="Do it again!">
+    <p id="target"></p>
 </body>
+<script>
+     document.getElementById("looper").onclick=function(){
+         var dogs=["German Sheperd", " Poodle", " Beagle"];
+
+         document.getElementById("target").innerHTML = dogs;
+     }
+</script>
 
 </html>

@@ -3,16 +3,16 @@ div {
 }
 h1 {
     margin: 25px auto;
-    width: 100$;
+    width: 100%;
     background-color: #E8480D;
-    text-alsign: center;
+    text-align: center;
     font-size: 24px;
     font-family: sans-serif;
     color: #FFF;
 }
-#rightbutt {
+#rt {
     float: right;
 }
-#rightbutt, #leftbutt {
-    width: 100%;
+#rt, #lt {
+    width: 100px;
 }

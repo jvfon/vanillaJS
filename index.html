@@ -10,44 +10,36 @@
     <link rel="stylesheet" style="text/css" href="vanillaJS.css">
 </head>
 <body>
-    <!-- <h1></h1>
-    <input type="button" id="looper" value="Do it again!">
-    <p id="target"></p> -->
-</body>
     <div>
-        <h1>More Functions</h1>
-        <input type="button" id="lb" value="Do it!">
-        <input type="button" id="rb" value="Do it again!">
+        
+        <h1>More about Functions</h1>
+        <input type="button" id="leftbutt" value="Do it!">
+        <input type="button" id="rightbutt" value="Do it again!">
         <p id="target"></p>
 
     </div>
 
 <script>
 
-    var rightButton = document.getElementById("rb");
-   rightButton.value = "What?";
-    alert(rightButton.value);
+/* 
+Use functions to: (1)package up code, to (2)control when it runs and to (3)reuse code in different places. Less code, the better!
+*/
 
-    document.getElementById("lb").onclick=function() {
-        alert(this.value);
+    function aFunction(aButton) {
+        var button = document.getElementById(aButton);
+        button.value = "It was clicked!!!";
     }
 
-     /* document.getElementById("looper").onclick=function(){
-         var dogs=[" German Sheperd", " Poodle", " Beagle"];
 
-         var pets=[" cats", " fish", dogs, " birds"];
-         
-         dogs.push(" Pushing dog");
+    document.getElementById("rightbutt").onclick=function(){	
+         aFunction(this.id);		
+    }
 
-         for (index = 0; index < dogs.length; index++ ) {
-             alert(dogs[index]);
-         }
+    document.getElementById("leftbutt").onclick=function(){	
+         aFunction(this.id);	
+    }
 
-         document.getElementById("target").innerHTML = pets;
 
-         alert(dogs.sort());
-    
-     }
 </script>
-
+</body>
 </html>

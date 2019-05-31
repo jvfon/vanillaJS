@@ -16,8 +16,8 @@
 </body>
     <div>
         <h1>More Functions</h1>
-        <input type="button" id="lt" value="Do it!">
-        <input type="button" id="rt" value="Do it again!">
+        <input type="button" id="lb" value="Do it!">
+        <input type="button" id="rb" value="Do it again!">
         <p id="target"></p>
 
     </div>
@@ -25,10 +25,10 @@
 <script>
 
     var rightButton = document.getElementById("rb");
-   // rightButton.value = "What?";
-    //alert(rightButton.value);
+   rightButton.value = "What?";
+    alert(rightButton.value);
 
-    document.getElementById("lt").onclick=function() {
+    document.getElementById("lb").onclick=function() {
         alert(this.value);
     }
 

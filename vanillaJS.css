@@ -1,0 +1,18 @@
+div {
+    position: relative;   
+}
+h1 {
+    margin: 25px auto;
+    width: 100$;
+    background-color: #E8480D;
+    text-alsign: center;
+    font-size: 24px;
+    font-family: sans-serif;
+    color: #FFF;
+}
+#rightbutt {
+    float: right;
+}
+#rightbutt, #leftbutt {
+    width: 100%;
+}

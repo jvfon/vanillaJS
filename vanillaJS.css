@@ -10,9 +10,9 @@ h1 {
     font-family: sans-serif;
     color: #FFF;
 }
-#rt {
+#rightbutton {
     float: right;
 }
-#rt, #lt {
+#rightbutton, #leftbutton {
     width: 100px;
 }
